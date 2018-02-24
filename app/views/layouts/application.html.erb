@@ -1,0 +1,90 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+
+　　  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+      <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+      <%= csrf_meta_tags %>
+
+<meta name="keywords" content="キーワード1,キーワード2,キーワード3">
+<meta name="description" content="このページに関する簡単な説明。">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<title>ページのタイトル</title>
+
+</head>
+<body>
+
+
+<!-- ヘッダ開始 -->
+<div id="header">
+
+<div class="top">
+<div class="container">
+
+<h1 class="siteTitle">Vicke English School・個別学習</h1>
+
+
+
+</div>
+</div>
+
+<div class="opening">
+<div class="container">
+
+<h2> <%= image_tag 'vicke_home.jpg',:width =>'880', :height => '260'%></h2>
+
+</div>
+</div>
+
+<div class="nl">
+<div class="container">
+
+<ul class="clearFix">
+<li class="first active"><a href="/home">ホーム <span class="en">Home</span></a></li>
+<li><a href="/cource">コース紹介 <span class="en">Cource</span></a></li>
+<li><a href="/map">場所<span class="en">Map</span></a></li>
+<li><a href="/inquiry">お問い合わせ <span class="en">Inquiry</span></a></li>
+<li class="last"><a href="/teacher">講師について <span class="en">About Teacher</span></a></li>
+</ul>
+
+</div>
+</div>
+
+<hr class="none">
+</div>
+
+
+<div class  = "wrapper">
+    <div class ='contents'>
+    
+    <%= yield %>
+    
+    </div>
+
+</div>
+
+<div class ="footer">
+
+<div class="container">
+
+<div class="address">
+<strong>Vicke English School</strong>
+<br>
+大阪市東成区大今里３－１１－５
+<br>
+Copyright (C) 2010 Vicke English School. All Rights Reserved.
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
