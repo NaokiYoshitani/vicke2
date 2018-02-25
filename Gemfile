@@ -47,10 +47,9 @@ end
 
 gem 'sqlite3', group: :development
 # 本番ではpostgressを使用する
-gem 'pg', group: :production
+gem 'pg',  group: :production
 
 group :production do
   gem 'rails_12factor'
 end
 
-ruby '2.3.4'
